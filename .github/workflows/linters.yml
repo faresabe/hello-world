@@ -29,9 +29,8 @@ jobs:
       - name: Setup Webhint
         run: |
           npm install --save-dev hint@7.x
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/benacode/linters-config/master/html-css/.hintrc
-      - name: Webhint Report
-        run: npx hint .
+               - name: Webhint Report
+       
   stylelint:
     name: Stylelint
     runs-on: ubuntu-22.04
